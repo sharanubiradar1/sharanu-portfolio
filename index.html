@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharanagouda Biradar - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">SB</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg id="sunIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                </svg>
+                <svg id="moonIcon" style="display: none;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="name">Sharanagouda Biradar</span></h1>
+                <p class="subtitle">Computer Science Engineering Student</p>
+                <p class="description">
+                    Results-driven final-year CSE student with expertise in full-stack development, 
+                    cloud computing, and machine learning. Passionate about building scalable solutions 
+                    using modern technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+            <div class="hero-image">
+    <div class="profile-circle">
+        <img src="profile.jpeg" alt="Profile" class="profile-image">
+    </div>
+</div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    I'm a passionate Computer Science Engineering student specializing in full-stack web development, 
+                    cloud computing, and machine learning applications. With a strong foundation in data structures 
+                    and algorithms, I thrive on solving complex problems and building innovative solutions.
+                </p>
+                <p style="margin-top: 1rem;">
+                    I have hands-on experience with modern technologies including React, Node.js, AWS, and various 
+                    machine learning frameworks. Currently seeking opportunities to contribute to cutting-edge projects 
+                    and grow as a software engineer.
+                </p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span>sharanubiradar018@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span>+91 6360688974</span>
+                </div>
+                <div class="contact-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    <span>Bangalore, India</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                    </svg>
+                    Programming Languages
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                    </svg>
+                    Web Technologies
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express.js</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                    </svg>
+                    Database Management
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Database Design</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
+                    </svg>
+                    Cloud Platforms
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">AWS EC2</span>
+                    <span class="skill-tag">AWS S3</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                    </svg>
+                    Development Tools
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Postman</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                    </svg>
+                    Core Competencies
+                </h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Data Structures</span>
+                    <span class="skill-tag">Algorithms</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">Agile</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            
+
+            <div class="project-card">
+                <h3>Epilepsy Seizure Detection Using EEG Signals</h3>
+                <p class="project-role">Backend Developer | Machine Learning Application</p>
+                <ul>
+                    <li>Developed an intelligent automated system for detecting epileptic seizures from EEG signal data using machine learning and deep learning techniques</li>
+                    <li>Engineered backend infrastructure to process and analyze complex EEG signal datasets for real-time seizure pattern identification</li>
+                    <li>Implemented machine learning models to classify seizure patterns with high accuracy, improving early detection capabilities</li>
+                    <li>Designed scalable data pipeline architecture to handle large volumes of medical signal data efficiently</li>
+                    <li>Collaborated with cross-functional team to integrate backend services with frontend visualization components</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Machine Learning</span>
+                    <span class="tech-badge">Deep Learning</span>
+                    <span class="tech-badge">Data Processing</span>
+                    <span class="tech-badge">Backend Development</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>CivicSync – Smart City Issue Reporting & Management Platform</h3>
+                <p class="project-role">Full-Stack Developer</p>
+                <ul>
+                    <li> Developed a full-stack MERN platform enabling citizens to report and track city issues in real time.</li>
+                    <li>Built secure RESTful APIs with JWT authentication and role-based access conrol.</li>
+                    <li>Designed a responsive, modern UI with an intuitive user experience.</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">Express.js</span>
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">JWT</span>
+                    <span class="tech-badge">REST APIs</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>FarmNet – Farmer–Buyer Marketplace Platform</h3>
+                <p class="project-role">Full-Stack Developer</p>
+                <ul>
+                    <li>Developed a digital marketplace connecting farmers, buyers, and transporters through a multi-login system. </li>
+                    <li>Implemented live bidding features for transparent crop pricing and built a responsive interface for seamless interactions across roles.</li>
+                    <li>Designed a responsive, modern UI with an intuitive user experience.</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">Express.js</span>
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">REST APIs</span>
+                    <span class="tech-badge">WebSockets</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Professional Portfolio Website</h3>
+                <p class="project-role">Full-Stack Developer | Personal Project</p>
+                <ul>
+                    <li>Designed and developed a modern, responsive portfolio website showcasing professional experience and projects</li>
+                    <li>Implemented dark/light theme toggle with localStorage persistence for enhanced user experience</li>
+                    <li>Created smooth scrolling navigation with active section highlighting and fade-in animations</li>
+                    <li>Built with clean, semantic HTML5, modern CSS3 features including flexbox and grid layouts</li>
+                    <li>Optimized for performance and accessibility across all devices and screen sizes</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                    <span class="tech-badge">Responsive Design</span>
+                    <span class="tech-badge">UI/UX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-card">
+            <h3>Bachelor of Engineering (B.E.) in Computer Science Engineering</h3>
+            <p class="education-details">
+                <strong>Visvesvaraya Technological University, Belagavi</strong><br>
+                Expected Graduation: 2026 | CGPA: 7.5/10.0
+            </p>
+            <div class="coursework">
+                <h4>Relevant Coursework:</h4>
+                <div class="coursework-list">
+                    <span class="skill-tag">Data Structures</span>
+                    <span class="skill-tag">Algorithms</span>
+                    <span class="skill-tag">Database Management Systems</span>
+                    <span class="skill-tag">Operating Systems</span>
+                    <span class="skill-tag">Computer Networks</span>
+                    <span class="skill-tag">Software Engineering</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Cloud Computing</span>
+                </div>
+            </div>
+            <div class="coursework" style="margin-top: 2rem;">
+                <h4>Certifications & Achievements:</h4>
+                <p style="color: #6b7280; margin-top: 0.5rem;">
+                    • Introduction to Algorithms and Analysis - NPTEL<br>
+                    • AWS Certified Developer - Associate - Infosys | Springboard<br>
+                    • Python for Data Science - IBM<br>
+                    • Software Engineer Intern - HackerRank<br>
+                    • Active Problem Solver on LeetCode and CodeChef competitive programming platforms
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume-container">
+            <div class="resume-card">
+                <svg class="resume-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+                <h3>Download My Resume</h3>
+                <p>Get a detailed overview of my experience, skills, and qualifications in PDF format.</p>
+                <a href="./resume.pdf" download="Sharanagouda_Biradar_Resume.pdf" class="btn btn-primary download-btn">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-card contact-card-small" onclick="window.location.href='mailto:sharanubiradar018@gmail.com'">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                <h3>Email</h3>
+            </div>
+
+            <div class="contact-card contact-card-small" onclick="window.location.href='tel:+916360688974'">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+                <h3>Phone</h3>
+            </div>
+
+            <div class="contact-card contact-card-small" onclick="window.open('https://linkedin.com/in/sharanu-biradar018', '_blank')">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                <h3>LinkedIn</h3>
+            </div>
+
+            <div class="contact-card contact-card-small" onclick="window.open('https://github.com/sharanubiradar1', '_blank')">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <h3>GitHub</h3>
+            </div>
+
+            <div class="contact-card contact-card-small" onclick="window.open('https://leetcode.com/u/Sharanb118', '_blank')">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-2.365-1.914-6.255-1.652-8.46.574l-4.278 4.203c-1.071 1.05-1.622 2.401-1.622 3.756 0 1.457.58 2.851 1.645 3.954l4.276 4.193c2.204 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003z"/>
+                </svg>
+                <h3>LeetCode</h3>
+            </div>
+
+            <div class="contact-card contact-card-small" onclick="window.open('https://medium.com/@sharanagoudabiradar', '_blank')">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                </svg>
+                <h3>Medium</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sharanagouda Biradar. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">Built with passion and dedication</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
