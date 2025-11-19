@@ -517,56 +517,6 @@ section {
     gap: 0.5rem;
 }
 
-/* Resume Section */
-.resume-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.resume-card {
-    max-width: 600px;
-    width: 100%;
-    padding: 3rem;
-    background: #f9fafb;
-    border-radius: 12px;
-    text-align: center;
-    border: 2px solid #e5e7eb;
-    transition: all 0.3s ease;
-}
-
-.resume-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-color: #2563eb;
-}
-
-.resume-icon {
-    width: 80px;
-    height: 80px;
-    color: #2563eb;
-    margin: 0 auto 1.5rem;
-}
-
-.resume-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #1f2937;
-}
-
-.resume-card p {
-    color: #6b7280;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-}
-
-.download-btn svg {
-    width: 20px;
-    height: 20px;
-}
-
-
 /* Contact Section */
 .contact-grid {
     display: grid;
