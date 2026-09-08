@@ -1,10 +1,9 @@
-
 const themeToggle = document.getElementById('themeToggle');
 const sunIcon = document.getElementById('sunIcon');
 const moonIcon = document.getElementById('moonIcon');
 const body = document.body;
 
-
+// Check for saved theme preference or default to 'light'
 const currentTheme = localStorage.getItem('theme') || 'light';
 if (currentTheme === 'dark') {
     body.classList.add('dark-mode');
@@ -88,6 +87,6 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Observe all cards and content sections
-document.querySelectorAll('.skill-card, .project-card, .education-card, .contact-card, .resume-card').forEach(el => {
+document.querySelectorAll('.skill-card, .project-card, .education-card, .contact-card, .experience-card').forEach(el => {
     observer.observe(el);
 });
