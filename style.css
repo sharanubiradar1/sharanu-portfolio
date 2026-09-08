@@ -38,7 +38,7 @@ body.dark-mode .skill-card h3,
 body.dark-mode .project-card h3,
 body.dark-mode .education-card h3,
 body.dark-mode .contact-card h3,
-body.dark-mode .resume-card h3 {
+body.dark-mode .experience-card h3 {
     color: #f9fafb;
 }
 
@@ -47,7 +47,7 @@ body.dark-mode .project-card,
 body.dark-mode .education-card,
 body.dark-mode .contact-card,
 body.dark-mode .contact-item,
-body.dark-mode .resume-card {
+body.dark-mode .experience-card {
     background: #2a2a2a;
     color: #e5e5e5;
 }
@@ -64,6 +64,23 @@ body.dark-mode .skill-tag:hover {
 
 body.dark-mode .contact-card:hover {
     background: #3b82f6;
+}
+
+body.dark-mode .company {
+    color: #3b82f6;
+}
+
+body.dark-mode .duration {
+    background: #3a3a3a;
+    color: #60a5fa;
+}
+
+body.dark-mode .project-link {
+    background: #3b82f6;
+}
+
+body.dark-mode .project-link:hover {
+    background: #2563eb;
 }
 
 /* Navigation */
@@ -286,11 +303,6 @@ body.dark-mode .theme-toggle svg {
     background: white;
 }
 
-.profile-placeholder {
-    font-size: 6rem;
-    color: #2563eb;
-    z-index: 1;
-}
 .profile-image {
     position: relative;
     z-index: 1;          
@@ -299,7 +311,6 @@ body.dark-mode .theme-toggle svg {
     border-radius: 50%;
     object-fit: cover;    
 }
-
 
 /* Section Styling */
 section {
@@ -368,6 +379,68 @@ section {
     width: 24px;
     height: 24px;
     color: #2563eb;
+}
+
+/* Experience Section */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-card {
+    padding: 2.5rem;
+    background: #f9fafb;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border-left: 4px solid #2563eb;
+}
+
+.experience-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-card h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.company {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.duration {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.experience-details {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+    color: #6b7280;
+}
+
+.experience-details li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
 }
 
 /* Skills Section */
@@ -483,6 +556,32 @@ section {
     font-weight: 500;
 }
 
+/* Project Link Button */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+.project-link svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* Education Section */
 .education-card {
     padding: 2.5rem;
@@ -509,12 +608,6 @@ section {
 .coursework h4 {
     color: #1f2937;
     margin-bottom: 1rem;
-}
-
-.coursework-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
 }
 
 /* Contact Section */
@@ -579,6 +672,7 @@ section {
 .contact-card:hover p {
     color: white;
 }
+
 /* Footer */
 footer {
     background: #1f2937;
@@ -647,6 +741,11 @@ footer {
         height: 270px;
     }
 
+    .profile-image {
+        width: 270px;
+        height: 270px;
+    }
+
     .section-title {
         font-size: 2rem;
     }
@@ -654,5 +753,13 @@ footer {
     .theme-toggle {
         width: 45px;
         height: 45px;
+    }
+
+    .experience-header {
+        flex-direction: column;
+    }
+    
+    .duration {
+        align-self: flex-start;
     }
 }
